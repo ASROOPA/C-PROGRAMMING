@@ -1,11 +1,12 @@
 #include <stdio.h>
 int sum(int num);
-void main()
+int main()
 {
     int i,n;
     scanf("%d",&n);
     i=sum(n);
     printf("%d",i);
+    return 0;
 }
 int sum(int num)
 {
