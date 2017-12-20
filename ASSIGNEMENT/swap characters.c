@@ -18,14 +18,13 @@ int main(void)
 	}
 	else
 	{
-		for(i=0;i<length-1;i++)
+		for(i=0;i<length-1;i+=2)
 		{
 			temp=s[i];
 			s[i]=s[i+1];
 			s[i+1]=temp;
 		}
 		printf("%s",s);
-		printf("%s",s[i-1]);
 	}
 	return 0;
 }
