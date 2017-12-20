@@ -1,14 +1,14 @@
 #include<stdio.h>
 int main(void)
 {
-	int n,i,sum=0,sum1=1;
+	int n,i,sum=0,sum1=1,sum2;
 	scanf("%d",&n);
-	printf("%d\n",sum);
-	printf("%d\n",sum1);
 	for(i=0;i<n;i++)
 	{
-		sum=sum+sum1;
 		printf("%d\n",sum);
+		sum2=sum+sum1;
+		sum=sum1;
+		sum1=sum2;
 	}
 	return 0;
 }
