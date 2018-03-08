@@ -1,8 +1,7 @@
 #include <stdio.h>
 int main(void) {
 	  int i,j,n;                                              
-       float median,a[100],t;                                    
-                                                               
+          float median,a[100],t;                                                                                  
        printf("Enter the number of items\n");                  
        scanf("%d", &n);                                        
        printf("Input %d values \n",n);                         
@@ -22,17 +21,12 @@ for (j = 1 ; j <= n-i ; j++)
               else continue ;                                     
           }                                                    
        }
-if ( n % 2 == 0)                                        
+       if ( n % 2 == 0)                                        
           median = (a[n/2] + a[n/2+1])/2.0 ;                   
        else                                                    
           median = a[n/2 + 1];                                 
-                                                               
-    
-for (i = 1 ; i <= n ; i++)                              
-           printf("%f  ", a[i]);                               
+       for (i = 1 ; i <= n ; i++)                              
+       printf("%f  ", a[i]);                               
        printf("\n\nMedian is %f\n", median);                   
-                                                               
-       
-       
-	return 0;
+       return 0;
 }
